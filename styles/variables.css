@@ -1,1 +1,13 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --Inter: 'Inter-Variable';
+    --PressStart2P: 'PressStart2P-Regular';
+    --normal: 410;
+    --bold: 715;
+    --gradient: 
+    repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px), 
+    repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
+    --block-width: clamp(375px, 260.5635px + 30.5164vw, 700px);
+    --outline-color:rgba(255, 255, 255, 1);
+}

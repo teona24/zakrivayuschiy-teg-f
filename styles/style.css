@@ -13,4 +13,238 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--Inter), sans-serif;
+  font-variation-settings: "wght" var(--normal);
+  color: rgba(0, 0, 0, 1);
+  background-image: var(--gradient);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header {
+  padding: 100px 0 100px 0;
+  font-family: var(--PressStart2P), sans-serif;
+}
+
+.block-width {
+  width: var(--block-width);
+  outline: 2px solid rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.header_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: clamp(122px, 119.183px + 0.7512vw, 130px);
+  padding-inline: clamp(16px, -21.5px + 10vw, 122.5px);
+}
+
+.header_title {
+  font-size: clamp(49px, 43.3664px + 1.5023vw, 65px);
+  margin-block-end: 20px;
+}
+
+.header_text {
+  font-size: clamp(14px, 10.831px + 0.84507vw, 23px);
+  text-transform: uppercase;
+}
+
+.header_text span {
+  text-transform: none;
+}
+
+.card_item {
+  margin-block-end: 50px;
+}
+
+.card_item-title {
+  display: flex;
+  flex-direction: column;
+  font-variation-settings: "wght" var(--bold);
+  font-size: 18px;
+  padding: 6px 12px;
+}
+
+.card_image {
+  position: relative;
+  border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: clamp(371px, 256.5635px + 30.5164vw, 696px);
+  object-fit: cover;
+}
+
+.label {
+  position: absolute;
+  z-index: 1;
+  top: 25px;
+  right: 27px;
+  font-family: var(--PressStart2P), sans-serif;
+  font-size: 14px;
+  opacity: 50%;
+  mix-blend-mode: hard-light;
+  text-shadow: -1px 0 var(--outline-color), 0 1px var(--outline-color), 1px 0 var(--outline-color), 0 -1px var(--outline-color);
+}
+
+@supports((text-stroke: 1px var(--outline-color)) or (-webkit-text-stroke: 1px var(--outline-color))) {
+  .label {
+    -webkit-text-stroke: 1px var(--outline-color);
+    text-stroke: 1px var(--outline-color);
+    text-shadow: none;
+  }
+}
+
+.card_text {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 25px 25px 0 25px;
+}
+
+.card_text-item {
+  margin-bottom: 22px;
+}
+
+.text-grayscale {
+  line-height: 20.5px;
+}
+
+.text-brightness, .text-invert, .text-blur {
+  line-height: 21.5px;
+}
+
+.text-hue-rotate, .text-sepia {
+  line-height: 21px;
+}
+
+.text-saturate {
+  line-height: 24.5px;
+}
+
+.card-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 25px 25px 0;
+}
+
+.card__icon-button {
+  background-color: transparent;
+  border: none;
+}
+
+.card__like-button {
+  background-color: transparent;
+  font-size: 14px;
+  font-family: var(--PressStart2P), sans-serif;
+  padding: 12.5px 37px;
+  border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.image-grayscale {
+  filter: grayscale(0.7);
+}
+
+.image-brightness {
+  filter: brightness(2) contrast(200%);
+}
+
+.image-hue-rotate {
+  filter: hue-rotate(90deg);
+}
+
+.image-invert {
+  filter: invert(80%);
+}
+
+.image-sepia {
+  filter: sepia(100%);
+}
+
+.image-blur {
+  filter: blur(5px);
+}
+
+.image-saturate {
+  filter: saturate(100%) hue-rotate(60deg);
+}
+
+.footer {
+  width: clamp(306px, 295.789px + 2.723vw, 335px);
+  background-color: rgba(255, 255, 255, 1);
+  margin: 0 34.5px 100px 34.5px;
+  border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.footer_button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  font-size: 14px;
+  font-family: var(--PressStart2P), sans-serif;
+  padding: 12px 17px;
+  line-height: 90%;
+  white-space: nowrap;
+  gap: 8px;
+  border: transparent;
+}
+
+.dialog[open] {
+  width: clamp(341px, 336.775px + 1.1268vw, 353px);
+  padding: 30px 40px;
+}
+
+.dialog_icon-text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-block-end: 30px;
+}
+
+.dialog_icon {
+  min-width: 39px;
+}
+
+.dialog_title {
+  font-size: 14px;
+  font-family: var(--PressStart2P), sans-serif;
+  line-height: 150%;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.dialog_button {
+  min-width: 261px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding: 12.5px 0;
+  border: 2px solid rgba(0, 0, 0, 1);
+  font-size: 14px;
+  font-family: var(--PressStart2P), sans-serif;
+  line-height: 90%;
+}
+
+.dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.6);
+}
+
+@media (376px <= width) {
+  .page {
+    padding-inline: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card_item-title {
+    flex-direction: row;
+    gap: 0.3rem;
+  }
 }
