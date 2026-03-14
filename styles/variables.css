@@ -10,4 +10,6 @@
     linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
     --block-width: clamp(375px, 260.5635px + 30.5164vw, 700px);
     --outline-color:rgba(255, 255, 255, 1);
+    --accent-color: rgba(0, 0, 0, 1);
+    --button-text-color: rgba(255, 255, 255, 1);
 }
