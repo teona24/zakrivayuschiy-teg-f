@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
     --Inter: 'Inter-Variable';
-    --PressStart2P: 'PressStart2P-Regular';
+    --PressStart2P: 'PressStart2P';
     --normal: 410;
     --bold: 715;
     --gradient: 
