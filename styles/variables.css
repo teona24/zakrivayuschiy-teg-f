@@ -12,4 +12,8 @@
     --outline-color:rgba(255, 255, 255, 1);
     --accent-color: rgba(0, 0, 0, 1);
     --button-text-color: rgba(255, 255, 255, 1);
+    --contour-color: rgba(0, 0, 0, 1);
+    --animation-fill-color: rgba(255, 0, 0, 1);
+    --heart-hover-color: rgba(0, 0, 0, 1);
+    --heart-active-color: rgba(255, 0, 0, 1);
 }
